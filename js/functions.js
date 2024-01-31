@@ -2,7 +2,8 @@
 
 function roll() {
   const rand = Math.floor(Math.random() * 6) + 1;
-  document.getElementById("dice_img").src = `img/${rand}.png`;
+  const img = `img/${rand}.png`;
+  document.querySelector("#dice img").src = img;
 }
 
-document.getElementById("dice_img").addEventListener("click", roll);
+document.getElementById("dice").addEventListener("click", roll);
